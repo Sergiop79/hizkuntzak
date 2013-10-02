@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block content %}
+<h2>{% trans "Albisteak" %}</h2>
+{% if albisteak %}
+	{% for albistea in albisteak %}
+	<h2>{{ albistea.izenburua }}</h2>
+	<p>{{ albistea.testua|safe }}</p>
+	{% endfor %}
+{% else %}
+<p>{% trans "Ez dago albisterik" %}</p>
+{% endif%}
+
+{% endblock content %}

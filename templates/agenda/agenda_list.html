@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+<h1>{% trans "Ebentuak:" %}</h1>
+
+{% if ebentuak %}
+<ul>
+	{% for ebentua in ebentuak %}
+	<li><a href="{% url "ebentua-detail" ebentua.pk %}">{{ ebentua.ebentua }} {{ ebentua.data |date:"SHORT_DATE_FORMAT"}}</a></li>
+	{% endfor%}
+</ul>
+{% else %}
+<p>{% trans "Ez dago ebenturik" %}</p>
+{% endif%}
+{% endblock content %}

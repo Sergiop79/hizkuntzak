@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+django-languageselect/__init__.py
+django-languageselect/forms.py
+django-languageselect/urls.py
+django-languageselect/views.py
+django-languageselect/templates/languageselect/layer.html
+django-languageselect/templatetags/__init__.py
+django-languageselect/templatetags/languageselect.py
+pip-egg-info/django_languageselect.egg-info/PKG-INFO
+pip-egg-info/django_languageselect.egg-info/SOURCES.txt
+pip-egg-info/django_languageselect.egg-info/dependency_links.txt
+pip-egg-info/django_languageselect.egg-info/not-zip-safe
+pip-egg-info/django_languageselect.egg-info/requires.txt
+pip-egg-info/django_languageselect.egg-info/top_level.txt
